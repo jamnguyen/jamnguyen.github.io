@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Dancing+Script|Pacifico");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+iframe {
+	border: none;
+}
+
+.highlight-pink {
+	color: #D40B5E;
+}
+
+.highlight-red {
+	color: #E50000;
+}
+
+.ques-container {
+	width: 80%;
+	height: 40rem;
+	margin: 10rem auto;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 10rem;
+}
+
+.lyrics-container {
+	display: flex;
+}
+
+.lyrics-thumb {
+	position: relative;
+	height: 100%;
+}
+
+.lyrics-thumb-img {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.lyrics-text {
+	padding-left: 7rem;
+}
+
+.lyrics-title {
+	font-family: "Amatic SC", sans-serif;
+	font-size: 6rem;
+	font-weight: 700;
+	padding-bottom: 1rem;
+}
+
+.mp3-player {
+	width: 80%;
+	padding-bottom: 1rem;
+	padding-left: 1rem;
+}
+
+.lyrics-content {
+	font-family: "Amatic SC", sans-serif;
+	font-size: 2.5rem;
+	font-weight: 700;
+	padding-left: 1rem;
+}
+
+.ques-ques {
+	font-family: "Amatic SC", sans-serif;
+	font-size: 4.5rem;
+	font-weight: 700;
+	text-align: center;
+	padding: 4rem 0;
+}
+
+.red-words-note {
+	font-family: "Pacifico", sans-serif;
+	font-size: 1.5rem;
+	font-style: italic;
+	padding: 4rem;
+}
+
+.next-btn {
+	position: fixed;
+	right: 5rem;
+	top: 3rem;
+}
+
+.ques-ans {
+	display: flex;
+	justify-content: center;
+}
+
+.ques-btn {
+	font-family: "Dancing Script", sans-serif;
+	font-size: 2.5rem;
+	margin: 0 2rem;
+	padding: 0.7rem 1.5rem;
+	border-bottom: 0.15rem solid white;
+	transition: color 0.3s, border-color 0.3s;
+/*	border: 0.07rem solid black;*/
+/*	border-radius: 0.5rem;*/
+}
+
+.ques-btn:hover {
+	color: #E00B6B;
+/*	text-decoration: underline;*/
+	border-bottom: 0.15rem solid gray;
+}
+
+.piglet {
+	position: fixed;
+	right: 5rem;
+	bottom: 3rem;
+}
+
+.piglet-img {
+	width: 14rem;
+}
+
+.piglet-img-no {
+	width: 11rem;
+}
+
+

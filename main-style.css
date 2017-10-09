@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Dancing+Script|Farsan|Pacifico");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.highlight-pink {
+	color: #D40B5E;
+}
+
+.highlight-red {
+	color: #E50000;
+}
+
+body, html {
+	height: 100%;
+}
+
+.content-container {
+	padding: 10rem;
+}
+
+.title {
+	font-family: "Amatic SC", sans-serif;
+	font-size: 6rem;
+	font-weight: 700;
+	padding-bottom: 2rem;
+}
+
+.text {
+	font-family: Farsan, sans-serif;
+	font-size: 2.5rem;
+	font-weight: 100;
+	padding-left: 1rem;
+}
+
+.bg-full {
+	height: 100%;
+	
+	/* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img1 {
+	background-image: url('img/background1.jpg');
+}
+
+.img2 {
+	background-image: url('img/background2.jpg');
+}
