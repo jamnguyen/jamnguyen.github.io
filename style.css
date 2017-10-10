@@ -14,6 +14,28 @@ iframe {
 	border: none;
 }
 
+.bg {
+	height: 100%;
+}
+
+.img-container {
+	padding-top: 25rem;
+	text-align: center;
+}
+
+.logo {
+	box-sizing: border-box;
+	width: 19rem;
+	transition: border 0.7s;	
+	border: 5px solid #fff;
+	border-radius: 50%;
+}
+
+.logo:hover {
+	border: 5px solid #D40B5E;
+}
+
+
 .highlight-pink {
 	color: #D40B5E;
 }
