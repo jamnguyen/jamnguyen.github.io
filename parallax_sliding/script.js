@@ -1,4 +1,4 @@
-const SLIDE_PARALLAX_RATIO = 0.8;
+const SLIDE_PARALLAX_RATIO = 0.2;    // %
 
 class Slider {
   
@@ -7,37 +7,47 @@ class Slider {
     this.currentX;
     this.diffX;
     this.isDragging;
-    this.slides = 0;
-    this.currentIndex = 0;
+
     this.slider;
-    this.firstSlide;
+    this.slides = [];
+    this.currentSlide;
+    this.currentIndex = 0;
 
     this.slider = document.getElementById('slider');
 
     Array.from(document.getElementsByClassName('card-wrapper')).forEach((element, index) => {
-      if(index === 0) {
-        this.firstSlide = element;
-      }
-
       element.addEventListener('touchstart', (evt) => this.handleTouchStart(evt));
       element.addEventListener('touchmove', (evt) => this.handleTouchMove(evt));
       element.addEventListener('touchend', (evt) => this.handleTouchEnd(evt));
       element.addEventListener('mousedown', (evt) => this.handleTouchStart(evt));
       element.addEventListener('mousemove', (evt) => this.handleTouchMove(evt));
       element.addEventListener('mouseup', (evt) => this.handleTouchEnd(evt));
-      this.slides++;
+      let backgroundElement = element.querySelector('.card');
+      let foregroundElement = element.querySelector('.animate-foreground');
+      let slide = element;
+      slide.backgroundElement = backgroundElement;
+      slide.foregroundElement = foregroundElement;
+      this.slides.push(slide);
     });
   }
   
   handleTouchStart(evt) {
     this.isDragging = true;
     this.startX = evt.x;
+    this.currentSlide = this.slides[this.currentIndex];
   }
 
   handleTouchMove(evt) {
     if (this.isDragging) {
       this.currentX = evt.x;
-      this.diffX = this.currentX - this.diffX;
+      this.diffX = this.currentX - this.startX;
+      if (Math.abs(this.diffX) > this.currentSlide.offsetWidth / 4) {
+        this.diffX = Math.sign(this.diffX) * (this.currentSlide.offsetWidth / 4);
+      }
+      this.currentSlide.backgroundElement.style.transition = "";
+      this.currentSlide.backgroundElement.style.transform = "translate(calc(-50% + " + this.diffX + "px), -50%)";
+      this.currentSlide.foregroundElement.style.transition = "";
+      this.currentSlide.foregroundElement.style.transform = "translate(calc(-50% - " + this.diffX*SLIDE_PARALLAX_RATIO + "px), -50%)";
     }
   }
 
@@ -46,9 +56,9 @@ class Slider {
     this.currentX = evt.x;
     this.diffX = this.currentX - this.startX;
 
-    let slideWidth = this.firstSlide.offsetWidth;
+    let slideWidth = this.slides[0].offsetWidth;
     if ((this.currentIndex === 0 && this.diffX > 0)
-      || (this.currentIndex === this.slides - 1 && this.diffX < 0)
+      || (this.currentIndex === this.slides.length - 1 && this.diffX < 0)
       || (Math.abs(this.diffX) < slideWidth/4)) {
         this.cancelSlide();
     } else if (this.diffX < 0) {
@@ -59,12 +69,22 @@ class Slider {
   }
 
   changeSlide(slideIndex) {
-    this.slider.style.cssText = `transform: translateX(${-slideIndex*this.firstSlide.offsetWidth}px)`;
+    this.currentSlide.backgroundElement.style.transition = "transform ease-out 0.5s";
+    this.currentSlide.backgroundElement.style.transform = "translate(-50% , -50%)";
+
+    this.currentSlide.foregroundElement.style.transition = "transform ease-out 0.5s";
+    this.currentSlide.foregroundElement.style.transform = "translate(-50%, -50%)";
+
+    this.slider.style.cssText = `transform: translateX(${-slideIndex*this.slides[0].offsetWidth}px)`;
     this.currentIndex = slideIndex;
   }
 
   cancelSlide() {
-    this.slider.style.cssText = `transform: translateX(${-this.currentIndex*this.firstSlide.offsetWidth}px)`;
+    this.currentSlide.backgroundElement.style.transition = "transform ease-out 0.3s";
+    this.currentSlide.backgroundElement.style.transform = "translate(-50% , -50%)";
+    
+    this.currentSlide.foregroundElement.style.transition = "transform ease-out 0.3s";
+    this.currentSlide.foregroundElement.style.transform = "translate(-50%, -50%)";
   }
 }
 
