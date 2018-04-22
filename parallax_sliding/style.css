@@ -25,6 +25,26 @@ body {
   animation: animFadeIn 1s ease;
 }
 
+#original-post {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  position: fixed;
+  left: 50%;
+  top: 7%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  transition: all ease 0.5s;
+  padding: 10px 15px;
+  border: 2px solid #00000000;
+}
+#original-post:hover {
+  border: 2px solid white;
+}
+
+
 .slider {
   width: 300%;
   height: 100%;
