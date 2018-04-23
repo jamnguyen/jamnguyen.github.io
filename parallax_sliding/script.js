@@ -21,12 +21,12 @@ class Slider {
     let indicator = document.getElementById('indicator');
 
     Array.from(document.getElementsByClassName('card-wrapper')).forEach((element, index) => {
-      element.addEventListener('touchstart', (evt) => this.handleTouchStart(evt));
-      element.addEventListener('touchmove', (evt) => this.handleTouchMove(evt));
-      element.addEventListener('touchend', (evt) => this.handleTouchEnd(evt));
-      element.addEventListener('mousedown', (evt) => this.handleTouchStart(evt));
-      element.addEventListener('mousemove', (evt) => this.handleTouchMove(evt));
-      element.addEventListener('mouseup', (evt) => this.handleTouchEnd(evt));
+      element.addEventListener('touchstart', this.handleTouchStart.bind(this));
+      element.addEventListener('touchmove', this.handleTouchMove.bind(this));
+      element.addEventListener('touchend', this.handleTouchEnd.bind(this));
+      element.addEventListener('mousedown', this.handleTouchStart.bind(this));
+      element.addEventListener('mousemove', this.handleTouchMove.bind(this));
+      element.addEventListener('mouseup', this.handleTouchEnd.bind(this));
       let backgroundElement = element.querySelector('.card');
       let foregroundElement = element.querySelector('.animate-foreground');
       let slide = element;
@@ -51,12 +51,12 @@ class Slider {
   
   handleTouchStart(evt) {
     this.isDragging = true;
-    this.startX = evt.x;
+    this.startX = evt.x ? evt.x : Array.prototype.slice.call(evt.touches)[0].pageX;
   }
 
   handleTouchMove(evt) {
     if (this.isDragging) {
-      this.currentX = evt.x;
+      this.currentX = evt.x ? evt.x : Array.prototype.slice.call(evt.touches)[0].pageX;
       this.diffX = this.currentX - this.startX;
       if (Math.abs(this.diffX) > this.currentSlide.offsetWidth / 4) {
         this.diffX = Math.sign(this.diffX) * (this.currentSlide.offsetWidth / 4);
@@ -69,8 +69,8 @@ class Slider {
   }
 
   handleTouchEnd(evt) {
+    console.log(evt);
     this.isDragging = false;
-    this.currentX = evt.x;
     this.diffX = this.currentX - this.startX;
 
     let slideWidth = this.slides[0].offsetWidth;
