@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Contrail+One|Molengo');
+:root {
+  --highlight-color: #00cbe6;
+  --practice-item-header-height: 60px;
+  --practice-item-desc-height: 150px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-size: 16px;
+}
+body {
+  /* background: linear-gradient(#0dc2b5, #0db2ec); */
+  background-color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.jam-info {
+  background-color: rgba(255, 255, 255, 1.0);
+  width: 100%;
+  padding: 70px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ava-name-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.avatar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-right: 20px;
+  border: 7px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px transparent;
+  width: 180px;
+  height: 180px;
+  transition: all 0.5s;
+}
+.avatar-wrapper:hover {
+}
+.avatar-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.username {
+  font-family: 'Contrail One', sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.info-wrapper {
+  display: flex;
+  margin-top: 30px;
+}
+.info-item {
+  margin: 0 30px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border: 2px transparent solid;
+  font-family: 'Molengo', sans-serif;
+  color: black;
+  text-decoration: none;
+  /* border-radius: 5px; */
+  transition: all 0.5s;
+}
+.info-item:hover, .info-item:focus, .info-item:active {
+  border: 2px solid var(--highlight-color);
+}
+.info-item i {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+.info-item a:hover {
+}
+.info-item-link {
+
+}
+
+#my-practice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.practice-item {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  position: relative;
+  border: 2px solid transparent;
+  transition: all ease-in-out 0.5s;
+}
+.practice-item-expand {
+  border: 2px solid black;
+}
+.practice-item-header-wrapper {
+  width: 100%;
+  height: var(--practice-item-header-height);
+  position: relative;
+  transition: all ease-in-out 0.5s;
+}
+.practice-item-header-wrapper-expand {
+  background-color: black;
+}
+.practice-item-header {
+  font-family: 'Contrail One', sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px;
+  transition: all 0.5s;
+}
+.practice-item-header:hover {
+  color: var(--highlight-color);
+}
+.practice-item-header-expand {
+  color: white;
+  left: 0;
+  transform: translateX(0);
+}
+
+.practice-item-desc {
+  font-family: 'Molengo', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  overflow: hidden;
+  transition: all 0.5s;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+.practice-item-desc-expand {
+  height: var(--practice-item-desc-height);
+  padding-bottom: 15px;
+  opacity: 1;
+}
+.practice-item-desc p {
+  padding: 15px 15px 0px 15px;
+  text-align: left;
+}
+.practice-item-desc a {
+  padding: 0 5px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Contrail One', sans-serif;
+  font-size: 1.1rem;
+  transition: all ease-in-out 0.2s;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.practice-item-desc a i {
+  font-size: 1.2rem;
+  padding-left: 5px;
+}
+.practice-item-desc a:hover, .practice-item-desc a:focus {
+  background-color: var(--highlight-color);
+}
