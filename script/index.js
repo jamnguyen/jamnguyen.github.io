@@ -18,7 +18,7 @@ class PracticeItem {
     this.go = document.createElement('a');
     this.go.innerHTML = `Go to site <i class="fas fa-long-arrow-alt-right"></i>`;
     this.go.setAttribute('href', url);
-    this.go.setAttribute('target', '_blank');
+    // this.go.setAttribute('target', '_blank');
 
     this.desc.appendChild(this.go);
     this.headerWrapper.appendChild(this.header);
@@ -59,11 +59,11 @@ class PracticeItem {
 }
 
 var practiceItemData = [
-  {
-    header: 'Parallax Sliding',
-    desc: 'Using pure Javascript, CSS and HTML to create parallax effect while sliding.',
-    url: './parallax_sliding/'
-  },
+  // {
+  //   header: 'Parallax Sliding',
+  //   desc: 'Using pure Javascript, CSS and HTML to create parallax effect while sliding.',
+  //   url: './parallax_sliding/'
+  // },
   {
     header: 'React Tutorial',
     desc: 'Followed the tutorial on the official ReactJS site, including extended tasks.',
