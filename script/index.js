@@ -26,7 +26,7 @@ class PracticeItem {
     this.wrapper.appendChild(this.desc);
 
     this.header.addEventListener('mouseup', this.onHeaderTouched.bind(this));
-    this.header.addEventListener('touchend', this.onHeaderTouched.bind(this));
+    // this.header.addEventListener('touchend', this.onHeaderTouched.bind(this));
   }
 
   onHeaderTouched(evt) {
@@ -68,7 +68,7 @@ var practiceItemData = [
     header: 'React Tutorial',
     desc: 'Followed the tutorial on the official ReactJS site, including extended tasks.',
     url: './react-tutorial/'
-  }
+  },
 ]
 
 var practiceItems = [];
