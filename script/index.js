@@ -69,6 +69,11 @@ var practiceItemData = [
     desc: 'Followed the tutorial on the official ReactJS site, including extended tasks.',
     url: './react-tutorial/'
   },
+  {
+    header: 'Contact Manager',
+    desc: 'Simple React app to manage Contacts.',
+    url: './contact-manager/'
+  },
 ]
 
 var practiceItems = [];
