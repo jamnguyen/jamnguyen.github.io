@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>Simple Fibonacci Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="guide">
+        Input T, a, b
+        Return N
+      </div>
+      <div class="inputs">
+        <div class="input-group">
+          <label for="T">T: </label>
+          <input id="T" name="T" type="number">
+        </div>
+        <div class="input-group">
+          <label for="a">a: </label>
+          <input id="a" name="a" type="number">
+        </div>
+        <div class="input-group">
+          <label for="b">b: </label>
+          <input id="b" name="b" type="number">
+        </div>
+        <input class="btn" type="button" onclick="getN()" value="Get N">
+      </div>
+      <div id="result">
+        <div class="result-text" id="aki"></div>
+        <div class="result-text" id="fArray"></div>
+        <div class="result-text" id="n"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

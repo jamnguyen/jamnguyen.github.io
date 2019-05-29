@@ -74,6 +74,11 @@ var practiceItemData = [
     desc: 'Simple React app to manage Contacts.',
     url: './contact-manager/'
   },
+  {
+    header: 'Aki',
+    desc: 'Simple Fibonacci calculator.',
+    url: './fibonacci/'
+  },
 ]
 
 var practiceItems = [];
