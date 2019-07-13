@@ -1,0 +1,9 @@
+export const CONFIG = {
+  BLACK_BOX_HEIGHT: 100,
+
+  BALL_RADIUS: 50,
+  BALL_STROKE_WIDTH: 1,
+  BALL_MASS: 1.5,
+
+  GRAVITATIONAL_ACCELERATION: 0.0004    // pixels/ms/ms
+}

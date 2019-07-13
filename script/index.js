@@ -79,6 +79,11 @@ var practiceItemData = [
     desc: 'Simple Fibonacci calculator.',
     url: './fibonacci/'
   },
+  {
+    header: 'Bounce',
+    desc: 'Play with Canvas.',
+    url: './bounce/'
+  },
 ]
 
 var practiceItems = [];
