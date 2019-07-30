@@ -75,14 +75,19 @@ var practiceItemData = [
     url: './contact-manager/'
   },
   {
-    header: 'Aki',
-    desc: 'Simple Fibonacci calculator.',
-    url: './fibonacci/'
+    header: 'Aircraft',
+    desc: 'A simple board game using plain JS and Socket IO.',
+    url: './aircraft/'
   },
   {
     header: 'Bounce',
     desc: 'Play with Canvas.',
     url: './bounce/'
+  },
+  {
+    header: 'Aki',
+    desc: 'Simple Fibonacci calculator.',
+    url: './fibonacci/'
   },
 ]
 

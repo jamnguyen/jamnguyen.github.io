@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Aircraft</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./vendor/icofont/icofont.min.css">
+    <script src="./vendor/SocketIO/socket.io.js"></script>
+    <script src="https://unpkg.com/rxjs@6.5.2/bundles/rxjs.umd.min.js"></script>
+  </head>
+
+  <body>
+    <div id="in-game" class="in-game hidden">
+      <div id="board-player" class="board">
+        <div class="board-info">
+          <div class="board-info-name"></div>
+          <div class="board-info-notify"></div>
+        </div>
+        <canvas id="canvas-player" class="board-canvas"></canvas>
+      </div>
+      <div id="board-opponent" class="board hidden">
+        <div class="board-info">
+            <div class="board-info-name"></div>
+            <div class="board-info-notify">Lives: <span class="highlight-red">2</span></div>
+        </div>
+        <canvas id="canvas-opponent" class="board-canvas"></canvas>
+      </div>
+    </div>
+
+    <form id="register-form" class="popup hidden">
+      <label class="title" for="name-input">You are</label>
+      <input class="input" type="text" name="name-input" id="name-input" placeholder="Your name">
+      <button class="button" type="submit">Enter the game <i class="icofont-arrow-right"></i></button>
+    </form>
+    <div id="available-users" class="popup hidden">
+      <div class="title">Available Users</div>
+      <div id="user-list" class="user-list"></div>
+    </div>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+
+</html>

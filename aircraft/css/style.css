@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*:active,
+*:focus {
+  outline: none;
+}
+
+html, body {
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.popup {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 70%;
+  width: 500px;
+  padding: 30px;
+}
+
+.popup-background {
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.popup-message {
+  height: auto;
+  padding: 80px 50px;
+  width: 700px;
+}
+
+.title {
+  color: #00b496;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 60px;
+  letter-spacing: 3px;
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.button {
+  border: none;
+  border-radius: 10px;
+  background: #00b496;
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  font-size: 30px;
+  padding: 15px 35px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-red {
+  background: #cf0c0c;
+}
+
+.button:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+  transform: translateY(-3px) scale(1.02);
+}
+
+.button:active {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+  transform: translateY(-1px) scale(1);
+}
+
+.input {
+  border-radius: 5px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 25px;
+  padding: 10px;
+  margin-bottom: 150px;
+}
+
+.message {
+  font-size: 35px;
+  font-family: 'Fredoka One', cursive;
+}
+
+#available-users {
+  justify-content: start;
+  padding: 50px;
+  width: 800px;
+}
+
+.user-list {
+  padding: 20px 30px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.user-list-row {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.user-list-row-left {
+  font-size: 35px;
+  font-family: 'Fredoka One', cursive;
+  text-align: left;
+  width: 70%;
+}
+
+.user-list-row-right {
+  width: 30%;
+}
+
+.user-list-row-right button {
+  font-size: 20px;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* IN GAME CLASSES */
+/* --------------------------------------------------------------------- */
+.in-game {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+.board-info {
+  text-align: center;
+}
+
+.board-info-name {
+  color: #00b496;
+  font-size: 30px;
+  font-family: 'Fredoka One', cursive;
+  margin-bottom: 10px;
+}
+
+.board-info-notify {
+  color: #131313;
+  font-size: 20px;
+  font-family: 'Fredoka One', cursive;
+  margin-bottom: 15px;
+}
+
+.board-canvas {
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* UTILITY CLASSES */
+/* --------------------------------------------------------------------- */
+.m-l-sm {
+  margin-left: 10px;
+}
+.m-l-md {
+  margin-left: 20px;
+}
+.m-r-sm {
+  margin-right: 10px;
+}
+.m-r-md {
+  margin-right: 20px;
+}
+.m-b-xl {
+  margin-bottom: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.highlight-red {
+  color: #cf0c0c;
+}
