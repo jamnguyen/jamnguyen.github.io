@@ -16,12 +16,13 @@ export const MESSAGE = {
   IG_ATTACK: 'IG_ATTACK',
   IG_ATTACK_RESPONSE: 'IG_ATTACK_RESPONSE',
   IG_RESIGN: 'IG_RESIGN',
+  IG_PLANES: 'IG_PLANES',
   IG_ENDGAME: 'IG_ENDGAME',
   IG_CHAT: 'IG_CHAT',
 }
 
 export const SERVER = {
-  URL: 'https://jamnguyen-aircraft.herokuapp.com/'
+  URL: 'http://localhost:3000'
 }
 
 export const STATE = {
