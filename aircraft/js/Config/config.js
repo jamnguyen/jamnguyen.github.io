@@ -22,7 +22,7 @@ export const MESSAGE = {
 }
 
 export const SERVER = {
-  URL: 'http://localhost:3000'
+  URL: 'https://jamnguyen-aircraft.herokuapp.com/'
 }
 
 export const STATE = {
