@@ -22,6 +22,7 @@ export const MESSAGE = {
 }
 
 export const SERVER = {
+  // URL: 'http://localhost:3000',
   URL: 'https://jamnguyen-aircraft.herokuapp.com/'
 }
 
@@ -57,6 +58,7 @@ export const UI_BOARD = {
   BULLET_BODY_STROKE_COLOR: 'black',
   BULLET_HEAD_COLOR: 'red',
   BULLET_HEAD_STROKE_COLOR: 'white',
+  BULLET_HIGHLIGHT_COLOR: 'rgba(255, 242, 50, .5)',
 
   AIMING_MARK_COLOR: 'rgb(230, 0, 0)',
   AIMING_MARK_WIDTH: 10,
