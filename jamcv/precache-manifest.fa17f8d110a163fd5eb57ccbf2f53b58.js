@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "914564c0ba6e9261c4829687fe211a42",
+    "revision": "d1fa3dfbc20ffa920c2f9e9fe80ae47c",
     "url": "/jamcv/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jamcv/static/css/2.16218f3b.chunk.css"
   },
   {
-    "revision": "da1e07a0ad7b8132cfbc",
+    "revision": "2e3304e5aede7eae0980",
     "url": "/jamcv/static/css/main.26d41af9.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jamcv/static/js/2.4f5a6b33.chunk.js"
   },
   {
-    "revision": "da1e07a0ad7b8132cfbc",
-    "url": "/jamcv/static/js/main.3ebeecfb.chunk.js"
+    "revision": "2e3304e5aede7eae0980",
+    "url": "/jamcv/static/js/main.06f7fbb1.chunk.js"
   },
   {
     "revision": "3c41c2fc2f2312794aac",
