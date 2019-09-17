@@ -65,6 +65,11 @@ var practiceItemData = [
   //   url: './parallax_sliding/'
   // },
   {
+    header: 'Jam CV',
+    desc: 'An simple app to create CV. Made by ReactJS and Firebase.',
+    url: './jamcv/'
+  },
+  {
     header: 'React Tutorial',
     desc: 'Followed the tutorial on the official ReactJS site, including extended tasks.',
     url: './react-tutorial/'
@@ -84,11 +89,11 @@ var practiceItemData = [
     desc: 'Play with Canvas.',
     url: './bounce/'
   },
-  {
-    header: 'Aki',
-    desc: 'Simple Fibonacci calculator.',
-    url: './fibonacci/'
-  },
+  // {
+  //   header: 'Aki',
+  //   desc: 'Simple Fibonacci calculator.',
+  //   url: './fibonacci/'
+  // },
 ]
 
 var practiceItems = [];
