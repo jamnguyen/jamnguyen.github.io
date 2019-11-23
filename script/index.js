@@ -65,9 +65,19 @@ var practiceItemData = [
   //   url: './parallax_sliding/'
   // },
   {
+    header: 'Jakict',
+    desc: 'Are you learning languages? This is an simple application made with ReactJS to build your own dictionary.',
+    url: 'https://jakict.jamnguyen.com/'
+  },
+  {
     header: 'Jam CV',
-    desc: 'An simple app to create CV. Made by ReactJS and Firebase.',
+    desc: 'A simple app to create CV. Made by ReactJS and Firebase.',
     url: './jamcv/'
+  },
+  {
+    header: 'Aircraft',
+    desc: 'A simple board game using plain JS and Socket IO.',
+    url: 'https://aircraft.jamnguyen.com/'
   },
   {
     header: 'React Tutorial',
@@ -78,11 +88,6 @@ var practiceItemData = [
     header: 'Contact Manager',
     desc: 'Simple React app to manage Contacts.',
     url: './contact-manager/'
-  },
-  {
-    header: 'Aircraft',
-    desc: 'A simple board game using plain JS and Socket IO.',
-    url: './aircraft/'
   },
   {
     header: 'Bounce',
