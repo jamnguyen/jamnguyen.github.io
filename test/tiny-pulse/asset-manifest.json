@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/test/tiny-pulse/static/css/main.222b3f1a.chunk.css",
+    "main.js": "/test/tiny-pulse/static/js/main.d881369f.chunk.js",
+    "main.js.map": "/test/tiny-pulse/static/js/main.d881369f.chunk.js.map",
+    "runtime-main.js": "/test/tiny-pulse/static/js/runtime-main.db5e70d9.js",
+    "runtime-main.js.map": "/test/tiny-pulse/static/js/runtime-main.db5e70d9.js.map",
+    "static/js/2.3f5b3b1b.chunk.js": "/test/tiny-pulse/static/js/2.3f5b3b1b.chunk.js",
+    "static/js/2.3f5b3b1b.chunk.js.map": "/test/tiny-pulse/static/js/2.3f5b3b1b.chunk.js.map",
+    "static/js/3.1aded181.chunk.js": "/test/tiny-pulse/static/js/3.1aded181.chunk.js",
+    "static/js/3.1aded181.chunk.js.map": "/test/tiny-pulse/static/js/3.1aded181.chunk.js.map",
+    "index.html": "/test/tiny-pulse/index.html",
+    "static/css/main.222b3f1a.chunk.css.map": "/test/tiny-pulse/static/css/main.222b3f1a.chunk.css.map",
+    "static/js/2.3f5b3b1b.chunk.js.LICENSE.txt": "/test/tiny-pulse/static/js/2.3f5b3b1b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db5e70d9.js",
+    "static/js/2.3f5b3b1b.chunk.js",
+    "static/css/main.222b3f1a.chunk.css",
+    "static/js/main.d881369f.chunk.js"
+  ]
+}
