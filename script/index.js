@@ -65,6 +65,11 @@ var practiceItemData = [
   //   url: './parallax_sliding/'
   // },
   {
+    header: 'Team Shuffler',
+    desc: 'A simple tool for quick team picking (in my football team).',
+    url: './team-shuffler/'
+  },
+  {
     header: 'Jakict',
     desc: 'Are you learning languages? This is an simple application made with ReactJS to build your own dictionary.',
     url: 'https://jakict.jamnguyen.com/'
