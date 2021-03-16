@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/team-shuffler/static/css/main.41f1c009.chunk.css",
+    "main.css": "/team-shuffler/static/css/main.af47db2c.chunk.css",
     "main.js": "/team-shuffler/static/js/main.07c869bf.chunk.js",
     "main.js.map": "/team-shuffler/static/js/main.07c869bf.chunk.js.map",
     "runtime-main.js": "/team-shuffler/static/js/runtime-main.227df84b.js",
@@ -10,13 +10,13 @@
     "static/js/3.9fb9893c.chunk.js": "/team-shuffler/static/js/3.9fb9893c.chunk.js",
     "static/js/3.9fb9893c.chunk.js.map": "/team-shuffler/static/js/3.9fb9893c.chunk.js.map",
     "index.html": "/team-shuffler/index.html",
-    "static/css/main.41f1c009.chunk.css.map": "/team-shuffler/static/css/main.41f1c009.chunk.css.map",
+    "static/css/main.af47db2c.chunk.css.map": "/team-shuffler/static/css/main.af47db2c.chunk.css.map",
     "static/js/2.d8b3395e.chunk.js.LICENSE.txt": "/team-shuffler/static/js/2.d8b3395e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.227df84b.js",
     "static/js/2.d8b3395e.chunk.js",
-    "static/css/main.41f1c009.chunk.css",
+    "static/css/main.af47db2c.chunk.css",
     "static/js/main.07c869bf.chunk.js"
   ]
 }
