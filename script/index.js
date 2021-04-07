@@ -65,6 +65,11 @@ var practiceItemData = [
   //   url: './parallax_sliding/'
   // },
   {
+    header: 'Hoan chan Menu',
+    desc: 'Simple menu for my friend. Mam mam.',
+    url: './hoan-chan-menu/'
+  },
+  {
     header: 'Team Shuffler',
     desc: 'A simple tool for quick team picking (in my football team).',
     url: './team-shuffler/'
