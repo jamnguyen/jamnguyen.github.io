@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hoan-chan-menu/static/css/main.ea4eb6a4.chunk.css",
+    "main.css": "/hoan-chan-menu/static/css/main.bddb6d99.chunk.css",
     "main.js": "/hoan-chan-menu/static/js/main.9bc89f75.chunk.js",
     "main.js.map": "/hoan-chan-menu/static/js/main.9bc89f75.chunk.js.map",
     "runtime-main.js": "/hoan-chan-menu/static/js/runtime-main.64a940b4.js",
@@ -10,13 +10,13 @@
     "static/js/3.8118cece.chunk.js": "/hoan-chan-menu/static/js/3.8118cece.chunk.js",
     "static/js/3.8118cece.chunk.js.map": "/hoan-chan-menu/static/js/3.8118cece.chunk.js.map",
     "index.html": "/hoan-chan-menu/index.html",
-    "static/css/main.ea4eb6a4.chunk.css.map": "/hoan-chan-menu/static/css/main.ea4eb6a4.chunk.css.map",
+    "static/css/main.bddb6d99.chunk.css.map": "/hoan-chan-menu/static/css/main.bddb6d99.chunk.css.map",
     "static/js/2.494dc0e8.chunk.js.LICENSE.txt": "/hoan-chan-menu/static/js/2.494dc0e8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.64a940b4.js",
     "static/js/2.494dc0e8.chunk.js",
-    "static/css/main.ea4eb6a4.chunk.css",
+    "static/css/main.bddb6d99.chunk.css",
     "static/js/main.9bc89f75.chunk.js"
   ]
 }
