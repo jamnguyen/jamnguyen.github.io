@@ -87,7 +87,7 @@ var practiceItemData = [
   {
     header: 'Aircraft',
     desc: 'A simple board game using plain JS and Socket IO.',
-    url: 'https://aircraft.jamnguyen.com/'
+    url: './aircraft'
   },
   {
     header: 'React Tutorial',
